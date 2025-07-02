@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/alert-dialog";
 
 import Image from "next/image";
-import my_image from "../../public/anwar photho.jpeg";
+import my_image from "../../public/anwar-photo.jpg";
 
 function HomeModal({
   handleOpen,

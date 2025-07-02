@@ -1,6 +1,5 @@
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
-import Image from "next/image";
 import { Star } from "lucide-react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import {
@@ -14,31 +13,35 @@ import {
 export const CustomerFeedbacks = () => {
   const testimonials = [
     {
+      id: "test-1",
       name: "Thomas Garben",
       feedback:
-        "Anwar was a skilled developer to work with! He delivered high-quality work on time, communicated effectively, and showed great problem-solving skills. Highly recommended, and I’d love to work together again.",
+        "Anwar was a skilled developer to work with! He delivered high-quality work on time, communicated effectively, and showed great problem-solving skills. Highly recommended, and I'd love to work together again.",
       rating: 5,
-      avatar: "/images/john-doe.jpg",
+      initials: "TG",
     },
     {
+      id: "test-2",
       name: "Jacob Wredistrome",
       feedback: "Very competent developer.",
       rating: 5,
-      avatar: "/images/jane-smith.jpg",
+      initials: "JW",
     },
     {
+      id: "test-3",
       name: "Alice Johnson",
       feedback:
         "I loved the way Anwar completed my project. Everything was clearly communicated and solved.",
       rating: 5,
-      avatar: "/images/alice-johnson.jpg",
+      initials: "AJ",
     },
     {
-      name: "Alice Johnson",
+      id: "test-4",
+      name: "Michael Chen",
       feedback:
-        "I loved the way Anwar completed my project. Everything was clearly communicated and solved.",
+        "Outstanding work quality and excellent communication throughout the project. Highly recommend!",
       rating: 5,
-      avatar: "/images/alice-johnson.jpg",
+      initials: "MC",
     },
   ];
 
@@ -50,9 +53,9 @@ export const CustomerFeedbacks = () => {
         </h2>
         <Carousel>
           <CarouselContent className="">
-            {testimonials.map((testimonial, index) => (
+            {testimonials.map((testimonial) => (
               <CarouselItem
-                key={index}
+                key={testimonial.id}
                 className="px-4 md:basis-1/2 lg:basis-1/3  "
               >
                 <Card className="bg-gray-800 border border-gray-700 shadow-lg rounded-xl p-6 flex flex-col h-full">
@@ -66,15 +69,9 @@ export const CustomerFeedbacks = () => {
                   </CardContent>
                   <CardFooter className="flex items-center justify-between pt-4 border-t border-gray-700">
                     <div className="flex items-center space-x-3">
-                      {testimonial.avatar && (
-                        <Image
-                          src={testimonial.avatar}
-                          alt={`${testimonial.name}'s avatar`}
-                          width={40}
-                          height={40}
-                          className="w-12 h-12 rounded-full object-cover border-2 border-green-400"
-                        />
-                      )}
+                      <div className="w-12 h-12 rounded-full bg-green-400 flex items-center justify-center text-black font-bold text-sm">
+                        {testimonial.initials}
+                      </div>
                       <p className="font-medium text-white text-lg">
                         {testimonial.name}
                       </p>

@@ -14,7 +14,6 @@ import {
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { projects } from "@/lib/data";
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
 
 function WorkHero() {
   const [current, setCurrent] = useState(0);

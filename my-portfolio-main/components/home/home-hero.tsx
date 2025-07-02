@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import my_image from "../../public/anwar photho.jpeg";
+import my_image from "../../public/anwar-photo.jpg";
 import { FaDownload, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Button } from "../ui/button";
 import { useEffect } from "react";
@@ -84,7 +84,7 @@ function HomeHero() {
                 Anwar Gashaw
               </h1>
               <p className="text-gray-300 text-sm md:text-base mt-3">
-                Let's build something amazing together
+                Let&apos;s build something amazing together
               </p>
             </div>
 

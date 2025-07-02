@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="mb-4 sm:mb-0 text-center sm:text-left">
           <h4 className="text-lg font-semibold">Anwar Gashaw</h4>
           <p className="text-sm">
-            © {new Date().getFullYear()} All Rights Reserved
+            &copy; {new Date().getFullYear()} All Rights Reserved
           </p>
         </div>
 

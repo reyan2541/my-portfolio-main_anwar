@@ -46,39 +46,40 @@ import hs_mt_12 from "../public/assets/hs-mt-12.png";
 export const tabs = ["experience", "education", "skills", "about me"];
 export const experiences = [
   {
+    id: "exp-1",
     date: "June 2024 - Present",
     position: "Full Stack Developer",
     company: "SkyHub Technology Solutions",
   },
   {
-    date: "Juanuary 2024 -June 2024",
+    id: "exp-2",
+    date: "January 2024 - June 2024",
     position: "Full Stack Developer",
     company: "Mereb Technologies",
   },
   {
-    date: "September 2024 - Novemebr 2024",
+    id: "exp-3",
+    date: "September 2024 - November 2024",
     position: "Front-end Developer",
     company: "SkyHub Technology Solutions",
   },
   {
+    id: "exp-4",
     date: "May 2023 - August 2023",
     position: "Front-end Developer",
     company: "ALX Ethiopia",
   },
   {
-    date: "May 2023 - August 2023",
+    id: "exp-5",
+    date: "May 2023 - July 2023",
     position: "Front-end Developer",
     company: "JClass Solutions",
   },
   {
-    date: "May 2023 - August 2023",
+    id: "exp-6",
+    date: "June 2023 - August 2023",
     position: "Backend Developer",
     company: "Amplitude Ventures",
-  },
-  {
-    date: "May 2023 - August 2023",
-    position: "Front-end Developer",
-    company: "ALX Ethiopia",
   },
 ];
 export const education = [

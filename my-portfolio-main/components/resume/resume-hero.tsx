@@ -67,7 +67,7 @@ function ResumeHero() {
                   {experiences.map((experience) => (
                     <div
                       className="bg-zinc-800 flex flex-col space-y-4 p-4 rounded-lg hover:bg-zinc-700 transition cursor-pointer"
-                      key={experience.date}
+                      key={experience.id}
                     >
                       <p className="text-green-400">{experience.date}</p>
                       <div className="font-semibold text-white text-lg md:text-xl">

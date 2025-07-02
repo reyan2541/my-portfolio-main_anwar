@@ -6,7 +6,7 @@ const TypingAnimation = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Welcome to My Portfolio! I am a Full-stack Developer. Let's build something amazing together.",
+        "Welcome to My Portfolio! I am a Full-stack Developer. Let&apos;s build something amazing together.",
       ],
       typeSpeed: 50,
       backDelay: 1000,
